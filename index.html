@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive public history museum honoring Filipino women in World War II.">
+  <title>HERSTORY | Women of WWII Philippines</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">✦ HERSTORY <small>VIRTUAL MUSEUM</small></a>
+    <button id="menu" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#home">Entrance</a>
+      <a href="#stories">Heroines</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#archives">Archives</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#legacy">Legacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">PHILIPPINES · 1941—1945 · DIGITAL HISTORY EXHIBITION</p>
+        <h1>THE WOMEN<br>WHO <em>RESISTED.</em></h1>
+        <p class="lead">Beyond the front lines were Filipinas who gathered intelligence, cared for the wounded, organized supplies, and fought for liberation. Enter their history.</p>
+        <a class="btn" href="#stories">ENTER THE MUSEUM ↗</a>
+        <a class="textlink" href="#archives">Explore primary sources ↓</a>
+      </div>
+      <div class="hero-art">
+        <span>1941</span>
+        <div class="hero-photo"><img src="assets/images/forgotten-guerrilleras.png" alt="1946 Philippines Free Press article about women guerrillas"></div>
+        <span>1945</span>
+        <p>COURAGE · CARE · RESISTANCE</p>
+      </div>
+    </section>
+
+    <div class="ticker">FIVE ARCHIVAL OBJECTS <b>✦</b> SIX GALLERIES <b>✦</b> ONE HISTORY WORTH PRESERVING</div>
+
+    <section class="section intro">
+      <p class="eyebrow">CURATOR'S NOTE / 01</p>
+      <h2>History is more than<br><em>the battlefield.</em></h2>
+      <div class="intro-copy">
+        <p>Filipino women participated in the resistance against Japanese occupation in multiple ways: as guerrillas, intelligence workers, nurses, organizers, and civilians who provided essential aid. Their experiences were varied and often difficult to recover from official records. This exhibit invites you to examine evidence, question whose stories were preserved, and recognize the work of women in wartime.</p>
+        <p class="note">Historical method: archival documents and postwar accounts are interpreted in their original context; they are not treated as interchangeable evidence.</p>
+      </div>
+    </section>
+
+    <section id="stories" class="section dark">
+      <p class="eyebrow">GALLERY ONE / WOMEN OF RESISTANCE</p>
+      <h2>Faces of <em>courage.</em></h2>
+      <div class="story-grid">
+        <article class="story">
+          <div class="portrait photo-portrait">
+            <img src="assets/images/first-lieutenant.png" alt="Guerrilla roster documenting Lydia Villanueva-Arguilla’s service" loading="lazy">
+            <span>LYDIA’S SERVICE RECORD · <a href="https://artsandculture.google.com/asset/lydia-villanueva-arguilla/3AHG6HIRT_rrSQ?hl=en" target="_blank" rel="noopener">VIEW ORIGINAL PHOTO ↗</a></span>
+          </div>
+          <h3>Lydia Villanueva-Arguilla</h3>
+          <p>A writer and editor who joined Marking's Guerrillas, working in underground intelligence. A wartime roster identifies her as First Lieutenant.</p>
+          <a href="#archives">Examine her record →</a>
+        </article>
+
+        <article class="story">
+          <div class="portrait alt photo-portrait">
+            <img src="assets/images/colonel-yay.png" alt="1945 military record documenting Yay Panlilio" loading="lazy">
+            <span>YAY’S RECOGNITION RECORD · <a href="https://artsandculture.google.com/asset/mammy/zAFlhK3OLRkZMw?hl=en" target="_blank" rel="noopener">ARCHIVE ↗</a></span>
+          </div>
+          <h3>Valeria “Yay” Panlilio</h3>
+          <p>A journalist who helped lead and administer Marking's Guerrillas, preparing communications and supporting sick and wounded fighters.</p>
+          <a href="#archives">Examine her record →</a>
+        </article>
+
+        <article class="story">
+          <div class="portrait third photo-portrait doc-portrait">
+            <img src="assets/images/first-lieutenant.png" alt="Wartime roster document linked to women's guerrilla service" loading="lazy">
+            <span>CONTEXTUAL ARCHIVE (NOT JUANITA’S PHOTO) · <a href="https://artsandculture.google.com/story/KAWxk5CtcXJIJw" target="_blank" rel="noopener">VIEW COLLECTION ↗</a></span>
+          </div>
+          <h3>Juanita Kagahastian</h3>
+          <p>A wartime nurse whose service was later supported by a 1947 affidavit, showing how women had to document their contributions after liberation.</p>
+          <a href="#archives">Examine her record →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">GALLERY TWO / BEYOND COMBAT</p>
+      <h2>The many forms<br>of <em>resistance.</em></h2>
+      <div class="roles">
+        <article><span>✚</span><h3>Medical care</h3><p>Nurses and aides treated wounded fighters and helped sustain resistance networks.</p></article>
+        <article><span>⌁</span><h3>Communication</h3><p>Messages, reports, and intelligence connected people operating under occupation.</p></article>
+        <article><span>✦</span><h3>Organization</h3><p>Logistics, supplies, administration, and civilian support helped resistance groups function.</p></article>
+      </div>
+    </section>
+
+    <section id="timeline" class="section dark">
+      <p class="eyebrow">GALLERY THREE / CHRONOLOGY</p>
+      <h2>Moments in <em>time.</em></h2>
+      <div class="timeline" id="timelineItems"></div>
+    </section>
+
+    <section id="archives" class="section">
+      <p class="eyebrow">GALLERY FOUR / PRIMARY SOURCE COLLECTION</p>
+      <h2>Evidence speaks.<br><em>Look closer.</em></h2>
+      <p class="sub">Select any archival object to inspect its provenance, meaning, and limitations. Each exhibit includes a visible image preview and a link to the original source archive.</p>
+      <p class="offline-note">The exhibit images, timeline, annotations, and quiz work offline. Links to the original online archives require an internet connection.</p>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All objects</button>
+        <button class="filter" data-filter="wartime">Wartime</button>
+        <button class="filter" data-filter="postwar">Postwar</button>
+      </div>
+      <div id="artifactGrid" class="artifact-grid"></div>
+    </section>
+
+    <section id="quiz" class="section dark">
+      <p class="eyebrow">GALLERY FIVE / TEST YOUR KNOWLEDGE</p>
+      <h2>What will you <em>remember?</em></h2>
+      <div class="quizbox">
+        <div id="quizContent"></div>
+      </div>
+    </section>
+
+    <section id="legacy" class="section">
+      <p class="eyebrow">GALLERY SIX / HERITAGE & ACTION</p>
+      <h2>Remembering is<br><em>an act of care.</em></h2>
+      <p class="sub">Women's wartime labor can disappear when histories focus only on generals and battles. Preserving their records broadens our understanding of civic participation and the human cost of war.</p>
+      <div class="roles">
+        <article><h3>01 · Preserve</h3><p>Support archival digitization, responsible metadata, and long-term storage of original records.</p></article>
+        <article><h3>02 · Teach</h3><p>Bring primary-source analysis into classrooms and community history projects.</p></article>
+        <article><h3>03 · Verify</h3><p>Check dates, provenance, and competing perspectives before sharing historical claims online.</p></article>
+      </div>
+
+      <h3 class="reference-title">Research & references</h3>
+      <p>Primary objects are credited to <strong>Filipinas Heritage Library</strong>, with original item links provided in each exhibit. Additional context: <a target="_blank" rel="noopener" href="https://artsandculture.google.com/story/KAWxk5CtcXJIJw">Women and War exhibition</a>, <a target="_blank" rel="noopener" href="https://www.archives.gov/research/military/ww2/philippine">U.S. National Archives, Philippine Archives Collection</a>, and <a target="_blank" rel="noopener" href="https://www.filipinaslibrary.org.ph/articles/lydia-arguilla-mothering-modern-art/">Lydia Arguilla biography</a>.</p>
+      <details><summary>AI use & historical transparency</summary><p>AI was used for website code assisted by ChatGPT (GPT-6). The initial explanatory text was written by me. I independently verified all primary source dates, citations, image rights, and historical claims.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <strong>✦ HERSTORY</strong>
+    <p>THE UNSUNG HEROINES OF WORLD WAR II · AN EDUCATIONAL STUDENT PROJECT</p>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-panel">
+      <button id="closeModal" class="close" aria-label="Close exhibit">×</button>
+      <p class="eyebrow">ARCHIVAL OBJECT / PRIMARY SOURCE</p>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="offlineNotice" class="offline-notice" role="status" aria-live="polite" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
